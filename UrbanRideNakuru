@@ -5,143 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanRideNakuru - Car Hire Services</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f6f8;
+            background-color: #f8f9fa;
             color: #333;
         }
 
+        a { text-decoration: none; }
+
+        /* Header */
         header {
             background-color: #111;
-            color: white;
-            padding: 20px;
+            color: #fff;
+            padding: 30px 20px;
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+        header h1 { font-size: 36px; margin: 0; }
+        header p { font-size: 18px; margin: 5px 0 0 0; }
 
-        header p {
-            font-size: 18px;
-            margin-top: 5px;
-        }
-
+        /* Navigation */
         nav {
             background-color: #222;
-            padding: 10px;
+            padding: 12px 0;
             text-align: center;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
-            text-decoration: none;
+            margin: 0 20px;
             font-weight: bold;
+            font-size: 16px;
         }
 
-        nav a:hover {
-            color: #00bcd4;
-        }
+        nav a:hover { color: #00bcd4; }
 
+        /* Hero Section */
         .hero {
-            padding: 60px 20px;
             text-align: center;
-            background-color: white;
+            padding: 80px 20px;
+            background-color: #fff;
         }
 
-        .hero h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: #666;
-        }
-
+        .hero h2 { font-size: 40px; margin-bottom: 15px; }
+        .hero p { font-size: 20px; color: #555; }
         .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 14px 30px;
+            margin-top: 25px;
+            padding: 15px 35px;
             background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+            color: #fff;
+            border-radius: 6px;
             font-size: 18px;
+            font-weight: bold;
         }
+        .btn:hover { background-color: #1ebe5d; }
 
-        .btn:hover {
-            background-color: #1ebe5d;
-        }
-
+        /* Sections */
         .section {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
+        .section h2 { font-size: 32px; margin-bottom: 30px; }
+
+        /* Cards */
         .card {
-            background-color: white;
+            background-color: #fff;
+            max-width: 500px;
             margin: 20px auto;
             padding: 25px;
-            max-width: 500px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
+        /* Gallery */
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
         }
 
         .gallery img {
-            width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
         }
 
+        /* Pricing Table */
         table {
-            margin: 20px auto;
+            margin: 0 auto;
             border-collapse: collapse;
             width: 90%;
-            max-width: 600px;
+            max-width: 650px;
         }
 
-        table, th, td {
-            border: 1px solid #ddd;
-        }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 15px; font-size: 18px; text-align: center; }
+        th { background-color: #111; color: #fff; }
 
-        th, td {
-            padding: 12px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #111;
-            color: white;
-        }
-
+        /* Footer */
         footer {
             background-color: #111;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
             margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gallery img { width: 90%; }
+            nav a { display: block; margin: 10px 0; }
         }
     </style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
     <h1>UrbanRideNakuru</h1>
     <p>Reliable Car Hire Services in Nakuru</p>
 </header>
 
+<!-- Navigation -->
 <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
@@ -150,12 +141,14 @@
     <a href="#contact">Contact</a>
 </nav>
 
+<!-- Hero Section -->
 <section class="hero" id="home">
     <h2>Comfortable & Reliable Rides</h2>
     <p>Clean, safe, and affordable car hire in Nakuru. Book instantly via WhatsApp!</p>
-    <a class="btn" href="https://wa.me/254740143329">Book via WhatsApp</a>
+    <a class="btn" href="https://wa.me/254740143329">Book via WhatsApp: 0740143329</a>
 </section>
 
+<!-- Services Section -->
 <section class="section" id="services">
     <h2>Our Services</h2>
 
@@ -175,10 +168,54 @@
     </div>
 </section>
 
+<!-- Gallery Section -->
 <section class="section" id="gallery">
     <h2>Our Cars</h2>
     <div class="gallery">
-        <img src="https://via.placeholder.com/250x150.png?text=Car+1" alt="Car 1">
-        <img src="https://via.placeholder.com/250x150.png?text=Car+2" alt="Car 2">
-        <img src="https://via.placeholder.com/250x150.png?text=Car+3" alt="Car 3">
+        <img src= "C:\Users\Administrator\Downloads\WhatsApp Image 2026-03-02 at 23.05.55 (2).jpeg"alt="Car 1">
+        <img src= "C:\Users\Administrator\Downloads\WhatsApp Image 2026-03-02 at 23.05.55 (1).jpeg"alt="Car 2">
+        <img src="C:\Users\Administrator\Downloads\WhatsApp Image 2026-03-02 at 23.05.55 (1).jpeg"alt="Car 3">
     </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="section" id="pricing">
+    <h2>Pricing</h2>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Price (KES)</th>
+        </tr>
+        <tr>
+            <td>Event Transport</td>
+            <td>2,500 / trip</td>
+        </tr>
+        <tr>
+            <td>Private Car Hire</td>
+            <td>2,000 / 4 hours</td>
+        </tr>
+        <tr>
+            <td>Local Trips</td>
+            <td>1,000 / trip</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+        <p><strong>Phone:</strong> 0740143329</p>
+        <p><strong>WhatsApp:</strong> 0740143329</p>
+        <p><strong>Location:</strong> Nakuru, Kenya</p>
+        <a class="btn" href="https://wa.me/254740143329">Chat on WhatsApp</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 UrbanRideNakuru. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
